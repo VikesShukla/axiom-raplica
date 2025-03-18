@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>axiom-website</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .hero-overlay {
+      background-color: rgba(152, 165, 180, 0.8);
+      width: 580px;
+      padding: 20px;
+    }
+
+
+    .navbar-nav .nav-link {
+      color: rgb(0, 0, 0);
+      transition: color 0.3s;
+      font-weight: bold;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #f80080;
+    }
+
+
+    .key-feature-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .key-feature-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.2);
+      transition: left 0.4s ease;
+    }
+
+    .btn:hover::before {
+      left: 0;
+    }
+
+    .piyush {
+
+      border-radius: 100px;
+    }
+
+    .card-body .btn {
+      transition: all 0.3s ease-in-out;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-body .btn:hover {
+      background-color: #0c18c2;
+      color: rgb(214, 23, 23);
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <div class="container-fluid bg-success w-100">
+    <div class="row align-items-center">
+      <div class="col-md-6 col-sm-12 ">
+        <a href="call" class="text-white text-decoration-none">
+          <i class="fa-solid fa-phone me-2"></i>+91-9623910069
+        </a>
+        <a href="telegram" class="text-white text-decoration-none ">
+          <i class="fa-brands fa-telegram me-2"></i>admin@axiomtechguru.com
+        </a>
+      </div>
+      <div class="col-md-6 col-sm-12 text-center ">
+        <img src="./image/Group_1000006749-removebg-preview.png" alt="Logo" class="rounded-circle" width="40"
+          height="40">
+        <audio controls class="  pt-3" style="height: 50px; width: 200px; ">
+          <source src="cow.ogg" type="audio/ogg">
+          <source src="./image1/Rinder_muh.mp3" type="audio/mpeg">
+        </audio>
+        <a href="#" class="text-white me-2"><i class="fa-brands fa-square-youtube mt-3"></i></a>
+        <a href="#" class="text-white me-2 "><i class="fa-brands fa-linkedin mt-3"></i></a>
+        <a href="#" class="text-white me-2 "><i class="fa-brands fa-twitter mt-3"></i></a>
+        <a href="#" class="text-white me-2"><i class="fa-brands fa-facebook-f mt-3"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar-page all text -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./image/Group_1000006749-removebg-preview.png" alt="Logo" width="90" height="90">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Career</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Event <sup class="badge bg-danger">new</sup></a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section front page -->
+  <div class="position-relative">
+    <h1>Hello World</h1>
+    <img
+      src="https://media.istockphoto.com/id/1979289147/photo/data-analysis-science-and-big-data-with-ai-technology-analyst-or-scientist-uses-a-computer.jpg?s=612x612&w=0&k=20&c=vmC-jVG6PNPRQtgtBp2y1caApEGYjt-fDrm0VzRgvK8="
+      alt="Hero" class="img-fluid w-100" style="max-height: 800px; object-fit: cover;">
+    <div class="position-absolute hero-overlay" style="top: 40%; left: 10%;">
+      <h1 class="text-center">AXIOM TECHGURU PVT. LTD</h1>
+      <h3 class="text-center">"IT Solutions,By IT masters"</h3>
+    </div>
+  </div>
+
+  <!-- About Section second page -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h1 class="mb-4 text-center">ABOUT</h1>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img
+            src="https://media.gettyimages.com/id/594827899/photo/caucasian-woman-with-bionic-technology.jpg?s=1024x1024&w=gi&k=20&c=2r41-4XyNPHokjB3UJoiprtL0SZ4H2UFv-FrtOlvu0E="
+            alt="About" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+          <p style="font-size: 30px;">
+            Axiom TechGuru Pvt Ltd was established in 2003 and has
+            become a reputed organization offering
+            Internship, Research, and Software Development. We are a
+            leading software research and development firm in Nagpur,
+            providing high-end solutions for clients and corporates.
+          </p>
+          <p style="font-size: 30px;">
+            We assist our associate companies in hiring top offshore
+            talent to scale or build development teams from scratch.
+            Our team adheres to your processes and policies, operating just like an in-house team.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section third page -->
+  <section id="why-choose-us" class="py- bg-light">
+    <div class="container">
+      <h1 class="text-center mb-4">WHY CHOOSE US?</h1>
+      <div class="row align-items-center mb-3">
+        <div class="col-md-6">
+          <p style="font-size: 30px;">
+            Axiom TechGuru Pvt. Ltd. is your go-to choice for designing and setting up a website that meets today’s
+            technological demands. Our full-stack developers help elevate your business with a highly structured web
+            presence.
+          </p>
+          <p style="font-size: 30px;">
+            Combining back-end and front-end expertise, we build teams that fit your exact needs—whether you need a
+            long-term partner or a project-based team.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img
+            src="https://media.istockphoto.com/id/1162898563/photo/chicago-urban-skyscrapers-usa.jpg?s=2048x2048&w=is&k=20&c=zrQfJ-6bFTHUgWBp6rHeyKJJBZEMmuq1b2LSSEfJNrw="
+            alt="Building" class="img-fluid rounded">
+        </div>
+      </div>
+      <h2 class="text-center mb-4">KEY FEATURES</h2>
+      <div class="row">
+        <!-- key feature four page -->
+        <section class="container my-5">
+          <div class="row">
+            <div class="piyush col-md-4 mb-4 d-flex justify-content-center">
+              <div class="piyush card text-center key-feature-card p-3">
+                <div class="card-body">
+                  <img class="h-50 w-50 rounded-5"
+                    src="https://i.pinimg.com/474x/c6/22/4a/c6224ad16bdfb29c42d81a64498eea4d.jpg" alt="Time Management"
+                    class="mb-3">
+                  <h5 class="card-title">Time Management</h5>
+                  <p class="card-text">
+                    Looking for quality individuals to complete the desired output is a smart business approach.
+                  </p>
+                  <a href="#" class="btn btn-dark">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="piyush col-md-4 mb-4 d-flex justify-content-center rounded-5">
+              <div class="piyush card text-center key-feature-card p-3">
+                <div class="card-body">
+                  <img class="h-50 w-50 rounded-5"
+                    src="https://i.pinimg.com/474x/f2/f3/7c/f2f37c8ab0549416a4b4712eb1805594.jpg"
+                    alt="Multiple Expertise" class="mb-3">
+                  <h5 class="card-title">Multiple Expertise</h5>
+                  <p class="card-text">
+                    Hire full-stack experts skilled in a vast range of web development.
+                  </p>
+                  <a href="#" class="btn btn-dark">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="piyush col-md-4 mb-4 d-flex justify-content-center">
+              <div class="piyush card text-center key-feature-card p-3">
+                <div class="card-body">
+                  <img class="h-50 w-50 rounded-5"
+                    src="https://i.pinimg.com/474x/7a/65/61/7a6561c69356063002600b5e6e5316fc.jpg"
+                    alt="Support & Maintenance" class="mb-3">
+                  <h5 class="card-title">Support & Maintenance</h5>
+                  <p class="card-text">
+                    Our developers stay updated with the latest technology trends.
+                  </p>
+                  <a href="#" class="btn btn-dark">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="piyush col-md-4 mb-4 d-flex justify-content-center">
+              <div class="piyush card text-center key-feature-card p-3">
+                <div class="card-body">
+                  <img class="h-50 w-50 rounded-5"
+                    src="https://i.pinimg.com/474x/a5/a8/3e/a5a83ea62ee9a17ef48a15f216b8d2b6.jpg"
+                    alt="Cost-Effective Solutions" class="mb-3">
+                  <h5 class="card-title">Cost-Effective Solutions</h5>
+                  <p class="card-text">
+                    A cost-effective choice for full‑stack development.
+                  </p>
+                  <a href="#" class="btn btn-dark">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="piyush col-md-4 mb-4 d-flex justify-content-center">
+              <div class="piyush card text-center key-feature-card p-3">
+                <div class="card-body">
+                  <img class="h-50 w-50 rounded-5"
+                    src="https://i.pinimg.com/474x/f7/59/ef/f759efafd3627f6851433485dd28c93e.jpg"
+                    alt="Rapid Development" class="mb-3">
+                  <h5 class="card-title">Rapid Development</h5>
+                  <p class="card-text">
+                    Our teams collaborate to efficiently develop every project stage.
+                  </p>
+                  <a href="#" class="btn btn-dark">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="piyush col-md-4 mb-4 d-flex justify-content-center">
+              <div class="piyush card text-center key-feature-card p-3">
+                <div class="card-body">
+                  <img class="h-50 w-50 rounded-5"
+                    src="https://i.pinimg.com/474x/d0/89/29/d089297f460bcf3ab854b0c0dedb4a17.jpg"
+                    alt="Rapid Development" class="mb-3">
+                  <h5 class="card-title">Productivity</h5>
+                  <p class="card-text">
+                    How well developers tackle and resolve technical challenges
+                  </p>
+                  <a href="#" class="btn btn-dark">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- TESTIMONIAL Section fivth page-->
+        <section id="testimonials" class="py- 5 " style="background-color: rgb(121, 167, 133);">
+          <div class="container text-center ">
+            <p class="text-white mb-0" style="font-size:20px;">TESTIMONIAL</p>
+            <h1 class="mb-4" style="color: rgb(52,58,64);">Happy Clients</h1>
+            <div class="row">
+
+              <div class="col-md-4 mb-3">
+                <div class="card p-3">
+                  <div style="margin-top: -40px;"
+                    class="bg-success rounded-circle d-inline-block p-2 mb-3 w-25 h-25 mb-1">
+                    <i class="fa fa-quote-left fa-2x text-white"></i>
+                  </div>
+                  <p class="text-muted">
+                    Excellent services for software research and development. The motivational environment and
+                    professional skills built at Axiom TechGuru make it an exceptional internship platform.
+                  </p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img src="https://i.pinimg.com/736x/4c/5d/b5/4c5db5ab497bfb24394771b607c011fb.jpg"
+                      alt="Rakesh Vyawhare" class="rounded-circle me-2" width="40" height="40">
+                    <h5 class="mb-0">Tanisk Tiwari</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card p-3">
+                  <div style="margin-top: -40px;"
+                    class="bg-success rounded-circle d-inline-block p-2 mb-3 w-25 h-25 mb-1">
+                    <i class="fa fa-quote-left fa-2x text-white"></i>
+                  </div>
+                  <p class="text-muted">
+                    Best Research and Development Services. Axiom TechGuru is an excellent ethical
+                    platform for freshers to kickstart their IT careers.
+                  </p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img src="https://i.pinimg.com/474x/76/53/16/765316b12b380d310f0aa4c35b80eb4c.jpg"
+                      alt="Rakesh Vyawhare" class="rounded-circle me-2" width="40" height="40">
+                    <h5 class="mb-0">Ritesh Tiwari</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card p-3">
+                  <div style="margin-top: -40px;"
+                    class="bg-success rounded-circle d-inline-block p-2 mb-3 w-25 h-25 mb-1">
+                    <i class="fa fa-quote-left fa-2x text-white"></i>
+                  </div>
+                  <p class="text-muted">
+                    Today I am working as Sr. Software Developer at TCS Pune. The support and guidance
+                    from Axiom TechGuru have been invaluable.
+                  </p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img src="https://i.pinimg.com/736x/47/ff/77/47ff7778a03c919bdb0cf93e0f1adf7f.jpg"
+                      alt="Rakesh Vyawhare" class="rounded-circle me-2" width="40" height="40">
+                    <h5 class="mb-0">Vikesh Shukla</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer-page sixth page-->
+        <footer class="bg-dark text-white py-5">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-md-3 mb-3">
+                <h5>Social Links</h5>
+                <div class="d-flex gap-2">
+                  <a href="#" class="btn btn-outline-light rounded-circle"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#" class="btn btn-outline-light rounded-circle"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#" class="btn btn-outline-light rounded-circle"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#" class="btn btn-outline-light rounded-circle"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="#" class="btn btn-outline-light rounded-circle"><i
+                      class="fa-brands fa-square-youtube"></i></a>
+                </div>
+              </div>
+
+              <div class="col-md-3 mb-3">
+                <h5>Explore</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-white text-decoration-none">
+                      <i class="fa-solid fa-chevron-right me-2"></i>Home</a>
+                  </li>
+                  <li><a href="#" class="text-white text-decoration-none">
+                      <i class="fa-solid fa-chevron-right me-2"></i>Portfolio</a>
+                  </li>
+                  <li><a href="#" class="text-white text-decoration-none">
+                      <i class="fa-solid fa-chevron-right me-2"></i>Services</a>
+                  </li>
+                  <li><a href="#" class="text-white text-decoration-none">
+                      <i class="fa-solid fa-chevron-right me-2"></i>Product</a>
+                  </li>
+                  <li><a href="#" class="text-white text-decoration-none">
+                      <i class="fa-solid fa-chevron-right me-2">
+
+                      </i>Events <span class="badge bg-danger">new</span></a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-md-3 mb-3">
+                <h5>Company</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-white text-decoration-none">
+                      <i class="fa-solid fa-chevron-right me-2"></i>Contact</a>
+                  </li>
+                  <li><a href="#" class="text-white text-decoration-none">
+                      <i class="fa-solid fa-chevron-right me-2"></i>Career</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-md-3 mb-3">
+                <h5>Have a Questions?</h5>
+                <ul class="list-unstyled">
+                  <li><i class="fa-solid fa-map me-2"></i>G-5, Anand Plaza, I.T. Park Road, Nagpur</li>
+                  <li><i class="fa-solid fa-phone"></i><a href="#"
+                      class="text-white text-decoration-none">+91-962391XXXX</a></li>
+                  <li><i class="fa-brands fa-telegram"></i></i><a href="mailto:axiomtechguru@gmail.com"
+                      class="text-white text-decoration-none">axiomtechguru@gmail.com</a></li>
+                  <li><a href="mailto:admin@axiomtechguru.com" class="text-white text-decoration-none">
+                      admin@axiomtechguru.com</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <!-- Bootstrap Bundle with Popper -->
+
+</body>
+
+</html>
